@@ -1,0 +1,9 @@
+{
+    "user_id": "{{ data.sso }}",
+    "type": "search",
+    "timestamp": "{{ data.action_date|datetime_format }}",
+    "product_ids": {{ data.nid|list_of_str }},
+    "search": {
+        "keywords": "{{ data.search_keyword }}"
+    }
+}

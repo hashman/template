@@ -1,0 +1,6 @@
+{
+    "user_id": "{{ data.sso }}",
+    "type": "product_detail_page_view",
+    "timestamp": "{{ data.action_date|datetime_format }}",
+    "product_ids": {{ data.nid|list_of_str }}
+}

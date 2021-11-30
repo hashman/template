@@ -1,0 +1,19 @@
+{
+    "user_id": "{{ data.sso }}",
+    "type": "share",
+    "timestamp": "{{ data.share_date|datetime_format }}",
+    "product_ids": {{ data.nid|list_of_str }},
+    "context": {
+        "custom_context": {
+            "verb": "{{ data.verb }}",
+            "asset_id": "{{ data.asset_id }}",
+            "asset_title": "{{ data.asset_title }}",
+            "asset_url": "{{ data.asset_url }}",
+            "domain_name": "{{ data.domain_name }}",
+            "tag": "{{ data.tag }}",
+            "tag_description": "{{ data.tag_description }}",
+            "instructor_sso": "{{ data.instructor_sso }}",
+            "shared_method": "{{ data.shared_method }}"
+        }
+    }
+}
