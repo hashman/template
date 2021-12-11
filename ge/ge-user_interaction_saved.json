@@ -5,9 +5,9 @@
     "product_ids": {{ data.nid|list_of_str }},
     "context": {
         "custom_context": {
-            "asset_title": "{{ data.asset_title }}",
-            "asset_type": "{{ data.asset_type }}",
-            "source": "{{ data.source }}"
+            "asset_title": "{{ data.asset_title|remove_symbol }}",
+            "asset_type": "{{ data.asset_type|remove_symbol }}",
+            "source": "{{ data.source|remove_symbol }}"
         }
     }
 }
