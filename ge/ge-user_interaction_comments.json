@@ -11,7 +11,7 @@
             "asset_title": "{{ data.asset_titla }}",
             "asset_url": "{{ data.asset_url }}",
             "domain_name": "{{ data.domain_name }}",
-            "tag": "{{ data.tag }}",
+            "tag": "{{ data.tag|remove_symbol }}",
             "tag_description": "{{ data.tag_description }}",
             "instructor_sso": "{{ data.instructor_sso }}",
             "comment_body": "{{ data.comment_body|remove_symbol }}"
