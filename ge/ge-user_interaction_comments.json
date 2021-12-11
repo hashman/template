@@ -8,7 +8,7 @@
             "verb": "{{ data.verb }}",
             "firstname": "{{ data.firstname|remove_symbol }}",
             "lastname": "{{ data.lastname|remove_symbol }}",
-            "asset_title": "{{ data.asset_title }}",
+            "asset_title": "{{ data.asset_title|remove_symbol }}",
             "asset_url": "{{ data.asset_url }}",
             "domain_name": "{{ data.domain_name }}",
             "tag": "{{ data.tag|remove_symbol }}",
