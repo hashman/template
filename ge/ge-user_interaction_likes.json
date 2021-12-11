@@ -1,0 +1,20 @@
+{
+    "user_id": "{{ data.sso }}",
+    "type": "like",
+    "timestamp": "{{ data.like_date|datetime_format }}",
+    "product_ids": {{ data.nid|list_of_str }},
+    "context": {
+        "custom_context": {
+            "verb": "{{ data.verb }}",
+            "firstname": "{{ data.firstname|remove_symbol }}",
+            "lastname": "{{ data.lastname|remove_symbol }}",
+            "asset_id": "{{ data.asset_id|remove_symbol }}",
+            "asset_title": "{{ data.asset_title|remove_symbol }}",
+            "asset_url": "{{ data.asset_url|remove_symbol }}",
+            "domain_name": "{{ data.domain_name|remove_symbol }}",
+            "tag": "{{ data.tag|remove_symbol }}",
+            "tag_description": "{{ data.tag_description|remove_symbol }}",
+            "instructor_sso": "{{ data.instructor_sso|remove_symbol }}",
+        }
+    }
+}
