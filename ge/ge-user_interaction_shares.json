@@ -6,13 +6,13 @@
     "context": {
         "custom_context": {
             "verb": "{{ data.verb }}",
-            "asset_id": "{{ data.asset_id }}",
-            "asset_title": "{{ data.asset_title }}",
-            "asset_url": "{{ data.asset_url }}",
-            "domain_name": "{{ data.domain_name }}",
-            "tag": "{{ data.tag }}",
-            "tag_description": "{{ data.tag_description }}",
-            "instructor_sso": "{{ data.instructor_sso }}",
+            "asset_id": "{{ data.asset_id|remove_symbol }}",
+            "asset_title": "{{ data.asset_title|remove_symbol }}",
+            "asset_url": "{{ data.asset_url|remove_symbol }}",
+            "domain_name": "{{ data.domain_name|remove_symbol }}",
+            "tag": "{{ data.tag|remove_symbol }}",
+            "tag_description": "{{ data.tag_description|remove_symbol }}",
+            "instructor_sso": "{{ data.instructor_sso|remove_symbol }}",
             "shared_method": "{{ data.shared_method }}"
         }
     }
