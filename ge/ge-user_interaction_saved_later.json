@@ -1,0 +1,13 @@
+{
+    "user_id": "{{ data.sso }}",
+    "type": "like",
+    "timestamp": "{{ data.action_time|datetime_format }}",
+    "product_ids": {{ data.nid|list_of_str }},
+    "context": {
+        "custom_context": {
+            "verb": "{{ data.verb }}",
+            "asset_title": "{{ data.asset_title|remove_symbol }}",
+            "source": "{{ data.source|remove_symbol }}",
+        }
+    }
+}
