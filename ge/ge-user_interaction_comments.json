@@ -13,7 +13,7 @@
             "domain_name": "{{ data.domain_name }}",
             "tag": "{{ data.tag|remove_symbol }}",
             "tag_description": "{{ data.tag_description }}",
-            "instructor_sso": "{{ data.instructor_sso }}",
+            "instructor_sso": "{{ data.instructor_sso|remove_symbol }}",
             "comment_body": "{{ data.comment_body|remove_symbol }}"
         }
     }
