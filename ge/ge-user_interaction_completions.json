@@ -7,7 +7,7 @@
         "custom_context": {
             "asset_title": "{{ data.asset_title|remove_symbol }}",
             "asset_type": "{{ data.asset_type|remove_symbol }}",
-            "source": "{{ data.source|remove_symbo }}"
+            "source": "{{ data.source|remove_symbol }}"
         }
     }
 }
